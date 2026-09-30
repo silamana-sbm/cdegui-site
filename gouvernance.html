@@ -96,9 +96,12 @@
   [data-reveal].in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1!important;transform:none!important;transition:none!important}}
 
-  @media (max-width:920px){
+    @media (max-width:1150px){
     nav.primary,.lang-switch{display:none}
     .burger{display:flex}
+  }
+
+@media (max-width:920px){
     .org-row{grid-template-columns:1fr}
   }
   @media (max-width:640px){
@@ -130,7 +133,7 @@
       <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav id="mobile-nav" style="border-top:1px solid var(--line);padding:10px 24px;display:flex;flex-direction:column">
+  <nav id="mobile-nav" style="border-top:1px solid var(--line);padding:10px 24px;flex-direction:column"><div class="lang-switch" role="group" aria-label="Langue" style="align-self:flex-start;margin-bottom:10px"><button class="active lang-fr" id="btn-fr-m">FR</button><button class="lang-en" id="btn-en-m">EN</button></div>
     <a href="index.html" style="padding:10px 0" data-i18n="nav_home">Accueil</a>
     <a href="a-propos.html" style="padding:10px 0" data-i18n="nav_about">À propos</a>
     <a href="services.html" style="padding:10px 0" data-i18n="nav_services">Services</a>
