@@ -150,8 +150,11 @@
   @media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1!important;transform:none!important;transition:none!important}}
 
     @media (max-width:1150px){
-    nav.primary,.lang-switch{display:none}
+    nav.primary{display:none}
     .burger{display:flex}
+  }
+  @media (max-width:640px){
+    .head-actions .btn{display:none}
   }
 
 @media (max-width:920px){
@@ -190,8 +193,7 @@
       <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav id="mobile-nav" style="border-top:1px solid var(--line);padding:10px 24px;flex-direction:column"><div class="lang-switch" role="group" aria-label="Langue" style="align-self:flex-start;margin-bottom:10px"><button class="active lang-fr" id="btn-fr-m">FR</button><button class="lang-en" id="btn-en-m">EN</button></div>
-    <a href="index.html" style="padding:10px 0;font-weight:700;color:var(--green)" data-i18n="nav_home">Accueil</a>
+  <nav id="mobile-nav" style="border-top:1px solid var(--line);padding:10px 24px;flex-direction:column"><a href="index.html" style="padding:10px 0;font-weight:700;color:var(--green)" data-i18n="nav_home">Accueil</a>
     <a href="a-propos.html" style="padding:10px 0" data-i18n="nav_about">À propos</a>
     <a href="services.html" style="padding:10px 0" data-i18n="nav_services">Services</a>
     <a href="gouvernance.html" style="padding:10px 0" data-i18n="nav_governance">Gouvernance</a>
@@ -199,8 +201,7 @@
     <a href="actualites-publications.html" style="padding:10px 0" data-i18n="nav_news">Actualités</a>
     <a href="membres.html" style="padding:10px 0" data-i18n="nav_members">Membres</a>
     <a href="contact.html" style="padding:10px 0" data-i18n="nav_contact">Contact</a>
-    <div class="lang-switch" style="margin:10px 0;width:fit-content"><button class="active lang-fr">FR</button><button class="lang-en">EN</button></div>
-  </nav>
+    </nav>
   <div class="tricolor"><span class="r"></span><span class="y"></span><span class="g"></span></div>
 </header>
 
